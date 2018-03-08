@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+#wrapper{
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+header{
+	background: url("../bilder/banner.jpg") no-repeat;
+	background-size: 100%;
+	background-position: 0 -55px;
+	height: 250px;
+}
+#karaktaer-galleri{
+	padding: 1%;
+	background-color: white;
+}
+#karaktaer-galleri ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+#karaktaer-galleri li{
+	flex: 1;
+	cursor: pointer;
+	text-align: center;
+}
+#karaktaer-galleri li img:hover{
+	border-top: 3px solid #BDBDBD;
+}
+#karaktaer-galleri img:hover{
+		opacity: 0.8;
+}
+.btn{
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	padding: 7%;
+	width: 50%;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #81D4FA;
+	border: none;
+	border-radius: 8%;
+	transition: 1s;
+	max-width: 90px;
+}
+.btn:hover{
+	width: 70%;
+	padding: 3%;
+	max-width: 127px;
+}
+.gom{
+	display: none !important;
+}
+.tv{
+	position: relative;
+}
+.tv img{
+	width: 100%;
+	border-radius: 5px;
+}
+.tv .citat{
+	position: absolute;
+	font-family: 'Anton', sans-serif;
+	top: 20%;
+	left: 10%;
+	font-size: 2em;
+	width: 70%;
+}
+.tv img.karaktaer{
+	width: 20%;
+	position: absolute;
+	top: 45%;
+	left: 30%;
+}
+@media screen and (max-width: 780px){
+header{
+	height: 200px;
+}
+.tv .citat{
+	font-size: 1.5em;
+}
+.tv img.karaktaer{
+	width: 30%;
+	top: 60%;
+	left: 70%;
+}
+}
+@media screen and (max-width: 480px){
+header{
+	height: 100px;
+}
+.tv .citat{
+	font-size: 1.1em;
+}
+.tv img.karaktaer{
+	width: 30%;
+	top: 60%;
+	left: 70%;
+}
+}
